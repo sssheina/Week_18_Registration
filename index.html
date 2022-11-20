@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/pen.png" type="image/png" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">Registration Form</div>
+      <div class="form formWithValidation">
+        <div class="inputfield">
+          <label>Login</label>
+          <input type="text" class="input" id="login" />
+        </div>
+        <div class="inputfield">
+          <label>Name</label>
+          <input type="text" class="input" id="userName" />
+        </div>
+        <div class="inputfield">
+          <label>Password</label>
+          <input type="password" class="input" id="password" />
+        </div>
+        <div class="inputfield">
+          <label>Confirm Password</label>
+          <input type="password" class="input" id="confPassword" />
+        </div>
+        <div class="inputfield">
+          <label>Sex</label>
+          <div class="custom_select" id="custom_select">
+            <select id="sexCheckbox">
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+        </div>
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="text" class="input" id="email" />
+        </div>
+        <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="tel" class="input" id="phone" placeholder="+1-234-567-8901"
+          pattern="\+\d-\d{3}-\d{3}-\d{4}"/>
+        </div>
+        <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea" id="textarea"></textarea>
+        </div>
+        <div class="inputfield">
+          <label>Postal Code</label>
+          <input type="text" class="input" id="postalCode" />
+        </div>
+        <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox" id="agreedCheckbox" />
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+        </div>
+        <div id="errorMessage"></div>
+        <br>
+        <div class="inputfield">
+          
+          <input type="submit" value="Register" class="btn validateBtn" onclick="check()" />
+        </div>
+      </div>
+    </div>
+    <script src="./assets/scripts/index.js"></script>
+  </body>
+</html>
