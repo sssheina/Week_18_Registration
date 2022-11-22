@@ -32,6 +32,5 @@ function checkAll() {
 
 	formElement.addEventListener('submit', function (evt) {
 		evt.preventDefault();
-	    console.log('Форма не отправлена');
         checkAll();
 	});
