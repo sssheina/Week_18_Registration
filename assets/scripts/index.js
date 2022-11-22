@@ -28,3 +28,10 @@ function checkAll() {
 }
 
 
+ const formElement = document.querySelector('.form');
+
+	formElement.addEventListener('submit', function (evt) {
+		evt.preventDefault();
+	    console.log('Форма не отправлена');
+        checkAll();
+	});
